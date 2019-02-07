@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Items</title>
+
+    <style>
+        TD,
+        TH {
+            padding: 3px;
+            /* Поля вокруг содержимого таблицы */
+            border: 1px solid black;
+            /* Параметры рамки */
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>I didn't really understand the task so its pure improvisation :)</caption>
+        <thead>
+            <th>H1</th>
+            <th>H2</th>
+            <th>H3</th>
+            <th colspan="2">H4-5</th>
+            <th>H6</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>D1</td>
+                <td>D2</td>
+                <td colspan="3">D3-4-5</td>
+                <td>D6</td>
+            </tr>
+            <tr>
+                <td>D1</td>
+                <td>D2</td>
+                <td>D3</td>
+                <td>D4</td>
+                <td>D5</td>
+                <td rowspan="4">4*D6</td>
+            </tr>
+            <tr>
+                <td>D1</td>
+                <td>D2</td>
+                <td>D3</td>
+                <td>D4</td>
+                <td>D5</td>
+            </tr>
+            <tr>
+                <td>D1</td>
+                <td>D2</td>
+                <td>D3</td>
+                <td>D4</td>
+                <td rowspan="2">2*D5</td>
+            </tr>
+            <tr height="150">
+                <td>D1</td>
+                <td>D2</td>
+                <td>D3</td>
+                <td>D4</td>
+            </tr>
+            <tr>
+                <td><input type="button" id="b1" value="Change" disabled></td>
+                <td><input type="button" id="b2" value="Change" disabled></td>
+                <td><input type="button" id="b3" value="Change" disabled></td>
+                <td><input type="button" id="b4" value="Change" disabled></td>
+                <td><input type="button" id="b5" value="Change" disabled></td>
+                <td><input type="button" id="b6" value="Change" disabled></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="b7" value="Delete" disabled></td>
+                <td><input type="button" id="b8" value="Delete" disabled></td>
+                <td><input type="button" id="b9" value="Delete" disabled></td>
+                <td><input type="button" id="b10" value="Delete" disabled></td>
+                <td><input type="button" id="b11" value="Delete" disabled></td>
+                <td><input type="button" id="b12" value="Delete" disabled></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>
