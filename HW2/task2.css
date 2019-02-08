@@ -9,8 +9,7 @@ body {
 }
 
 .block {
-    display: block;    
-    float: none;    
+    display: block;        
     width: 100px;
     height: 100px;
     margin: 0;
@@ -19,16 +18,19 @@ body {
 
 #b1 {
     background-color: red;     
+    z-index: 1;
 }
 
 #b2 {
     background-color: blue;  
     margin-top: 66.66px;
     margin-left: 66.66px;  
+    z-index: 2;
 }
 
 #b3 {
     background-color: yellowgreen;
     margin-top: 33.33px;
-    margin-left: 33.33px;      
+    margin-left: 33.33px;
+    z-index: 3;      
 }
