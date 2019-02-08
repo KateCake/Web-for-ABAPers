@@ -6,7 +6,6 @@ body {
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
 header {
@@ -18,7 +17,6 @@ header {
     text-align: center;
     border-bottom-left-radius: 5%;
     border-bottom-right-radius: 5%;
-
 }
 
 header .overlay {
@@ -30,12 +28,12 @@ header .overlay {
 }
 
 h1 {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Courier New', Courier, monospace, cursive;
     font-size: 80px;
     margin-bottom: 30px;
 }
 
-.sidebar {
+sidebar {
     display: block;
     position: fixed;
     width: 10%;
@@ -46,16 +44,46 @@ h1 {
     opacity: 0.5;
 }
 
-.sidebar dd {
+sidebar dd {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     color: salmon;
     display: block;
 }
 
-.sidebar a {
+li {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
+    margin: 2%;
     color: coral;
+}
+
+article {
     display: block;
+    float: right;
+    width: 83%;
+    position: absolute;
+    right: 0;
+    background-color: cornflowerblue;
+    padding: 1%;
+    height: 600px;
+}
+
+article p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: olive;
+}
+
+footer {   
+    width: 90%;   
+    position: absolute;
+    background-color: tomato;
+    padding: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 15%;
+    text-align: center;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
 }
