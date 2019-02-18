@@ -1,6 +1,8 @@
 body {
-    padding: 0;
+    padding: 1%;
     margin: 0;
+    background-color: lightgray;
+    align-content: flex;   
 }
 
 * {
@@ -9,128 +11,36 @@ body {
     box-sizing: border-box;
 }
 
-.block1,
-.block2,
-.block3 {
+
+.items {      
     display: flex;
-    float: left;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    background-color: grey;
+    flex-wrap: wrap;
 }
 
-.block1 {
-    align-content: flex-start;
-    height: 70px;
-}
+.item {
+    background-color: white;
+    text-align: center;
+    margin: 0.1%;
+    padding: 0.5%;   
+} 
 
-.block2 {
+img {    
     width: 100%;
-    align-content: center;
-}
+     }
 
-.block3 {
-    align-content: flex-end;
-}
-
-
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 812px) {
-    #b1 {
-        background-color: green;
-        width: 100%;
+@media only screen and (min-width : 1300px) and (max-width : 1920px){
+    .item {
+      width: 19.8%;     
     }
-
-    #b2,
-    #b5,
-    #b6 {
-        display: none;
+  }
+  
+  @media only screen and (min-width : 1024px) and (max-width : 1280px){
+    .item {
+      width: 24.8%;
     }
-
-    .block2 {
-        background-color: blueviolet;
-        height: 70px;
+    #item9, #item10 {
+        width: 49.8%;
     }
+  } 
 
-    .block3 {
-        width: 100%;
-        height: 500px;
-    }
-
-    #b4 {
-        background-color: red;
-    }
-}
-
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    #b1 {
-        background-color: orange;
-        width: 29%;
-        margin-right: 1%;
-    }
-
-    #b2 {
-        background-color: blueviolet;
-        width: 70%;
-    }
-
-    .block2 {
-        background-color: red;
-        height: 400px;
-    }
-
-    .block3 {
-        width: 49%;
-        height: 200px;
-    }
-
-    #b4 {
-        background-color: green;
-        margin-right: 1%;
-    }
-
-    #b5 {
-        background-color: blue;
-    }
-
-    #b6 {
-        display: none;
-    }
-}
-
-@media only screen and (min-device-width : 1080px) and (max-device-width : 1920px) {
-    #b1 {
-        background-color: red;
-        width: 29%;
-        margin-right: 1%;
-    }
-
-    #b2 {
-        background-color: orange;
-        width: 70%;
-    }
-
-    .block2 {
-        background-color: green;
-        height: 500px;
-    }
-
-    .block3 {
-        width: 32.66%;
-        height: 200px;
-    }
-
-    #b4 {
-        margin-right: 1%;
-        background-color: sienna;
-    }
-
-    #b5 {
-        background-color: blue;
-        margin-right: 1%;
-    }
-
-    #b6 {
-        background-color: blueviolet;
-    }
-}
